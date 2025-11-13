@@ -1,0 +1,121 @@
+# ===================================================================
+#  Python Gibignore Template
+#  来源: https://github.com/github/gitignore/blob/main/Python.gitignore
+#  及社区最佳实践
+# ===================================================================
+
+# 1. 字节码和编译文件 (Byte-compiled / optimized / DLL files)
+# -------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+# 2. 虚拟环境 (Virtual Environments)
+# -------------------------------------------------------------------
+# 不要提交你的虚拟环境，它包含特定于平台的库，并且可以通过 requirements.txt 重建
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+
+# 3. 分发/打包 (Distribution / packaging)
+# -------------------------------------------------------------------
+# 这些是在构建和发布包时生成的临时文件或最终产物
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+
+# 4. 测试与覆盖率报告 (Testing & Coverage reports)
+# -------------------------------------------------------------------
+# 这些是在运行测试时生成的缓存和报告
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+pytest-report.html
+
+
+# 5. IDE 和编辑器配置 (IDEs and editors)
+# -------------------------------------------------------------------
+# 每个开发者的编辑器配置都不同，不应纳入版本控制
+.idea/      # PyCharm, IntelliJ
+.vscode/    # Visual Studio Code (但可以保留 .vscode/settings.json 如果团队需要统一配置)
+*.swp
+*.swo
+*~
+
+
+# 6. 秘密和配置文件 (Secrets & Config files)
+# -------------------------------------------------------------------
+# !! 极度重要：永远不要将 API 密钥、密码等敏感信息提交到 Git 仓库 !!
+# 通常将这些信息保存在 .env 文件中，并通过 .env.example 来告知需要哪些变量
+.env
+.env.*
+!/.env.example  # 这个感叹号表示不要忽略 .env.example 文件
+secrets.ini
+config.ini      # 如果包含敏感信息
+*.key
+*.pem
+
+
+# 7. 操作系统生成的文件 (OS-generated files)
+# -------------------------------------------------------------------
+.DS_Store       # macOS
+Thumbs.db       # Windows
+
+
+# 8. 日志文件 (Log files)
+# -------------------------------------------------------------------
+*.log
+logs/
+
+
+# 9. Jupyter Notebook 检查点 (Jupyter Notebook checkpoints)
+# -------------------------------------------------------------------
+.ipynb_checkpoints
+
+
+# 10. 特定库的缓存 (Specific library caches)
+# -------------------------------------------------------------------
+# 例如 mypy, a popular static type checker for Python
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+
+# 11. Django 项目特定文件 (Django specific)
+# -------------------------------------------------------------------
+# 如果你使用 Django，可以取消下面的注释
+# *.sqlite3
+# db.sqlite3
+# local_settings.py
+
+
+# 12. PyInstaller 打包工具 (PyInstaller)
+# -------------------------------------------------------------------
+# 如果你使用 PyInstaller，可以取消下面的注释
+# *.spec
+# pyinstaller.log
